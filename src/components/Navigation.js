@@ -31,6 +31,7 @@ const Navigation = () => {
                             <span>Compétences</span>
                         </NavLink>
                     </li>
+                    
 
                     <li>
                         <NavLink exact to="/contact" activeClassName="navActive">

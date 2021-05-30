@@ -10,12 +10,12 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <switch>
-          <Route path="/" exact component={Home} />
+        <Switch>
+          <Route path="/" exact component={Home}/>
           <Route path="/competences" exact component={Knowledges} />
           <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/contact" exact component={Contact} />
-        </switch>
+        </Switch>
       </BrowserRouter>
     </div>
   );

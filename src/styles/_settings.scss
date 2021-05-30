@@ -1,0 +1,56 @@
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+
+$font-1: 'Nova Round',cursive;
+$font-2: 'Josefin',sans-serif;
+
+// Colors
+$color-1:rgb(221, 224, 255);
+$color-2:rgb(117, 132, 202);
+$color-3:#ccc;
+$color-4:rgb(204, 71, 71);
+$color-5:rgb(199, 91, 19);
+$white:rgb(248, 247, 247);
+$black:rgb(26, 25, 25);
+
+// Border-radiud
+$border-radius:25px;
+
+// Shadow
+$bos-shadow:1px 1px 3px rgba(0,0,0,.3);
+
+// Min-height
+$min-height:95vh;
+
+
+// @mixin
+@mixin verticalCenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// réglages de base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin:1rem auto;
+    max-width:1200px;
+    font-family: $font-1;
+    color:$black;
+    
+}
+
+button {
+    cursor:pointer;
+}
+
+
+li {
+    list-style-type: none;
+}
