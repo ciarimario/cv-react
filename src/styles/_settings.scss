@@ -1,8 +1,8 @@
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
-
-$font-1: 'Nova Round',cursive;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+$font-1: 'Roboto';
 $font-2: 'Josefin',sans-serif;
 
 // Colors
@@ -15,7 +15,7 @@ $white:rgb(248, 247, 247);
 $black:rgb(26, 25, 25);
 
 // Border-radiud
-$border-radius:25px;
+$border-radius:10px;
 
 // Shadow
 $bos-shadow:1px 1px 3px rgba(0,0,0,.3);
@@ -43,6 +43,7 @@ body {
     max-width:1200px;
     font-family: $font-1;
     color:$black;
+    background: linear-gradient(rgba(0,0,0,.1),rgba(128,128,128,.1))
     
 }
 

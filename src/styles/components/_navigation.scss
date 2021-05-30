@@ -3,11 +3,96 @@
     font-family: $font-1;
     height:100%;
     min-height:$min-height;
-    border-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $border-radius;
     position: relative;
     display:grid;
+    background:rgba(240, 239, 239,.5);
+    width:300px;
+    overflow:hidden;
+    
+    
 
     .id {
         display:flex;
+
+        .idContent {
+            background: rgb(204, 202, 202);
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                border-radius:50%;
+            }
+        }
+    }
+
+    .navigation {
+        background: #fff;
+        padding: 1rem;
+        ul {
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap:2rem;
+
+            li {
+               
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:rgba(0,0,0,.4);
+                    transition: ease-in-out .3s;
+                    display:inline-block;
+                    width:100%;
+                    margin-left:auto;
+                    
+                    &:hover {
+                        color:rgba(0,0,0,.8);
+                    }
+                }
+
+            &:hover i {
+                color:red;
+            }
+                i {
+                    margin-right:1em;
+                    transition: .3s ease-in-out;
+                    width:20px;
+                    
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        background: #fff;
+
+        ul {
+            display:flex;
+            justify-content: space-around;
+        }
+        i {
+            padding:.8rem;
+            background: rgba(0,0,0,.5);
+            border-radius:50%;
+            color:#fff;
+            transition: ease-in-out .3s;
+            &:hover {
+                color:#fff;
+                padding:.8rem;
+                background: rgba(0,0,0,.9);
+            }
+        }
+    }
+
+    .signature {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        background: #000;
     }
 }
